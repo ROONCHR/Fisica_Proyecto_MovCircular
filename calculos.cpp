@@ -1,6 +1,6 @@
 #include "funciones.h"
 #include <cmath>  // Para usar M_PI (valor de pi) y funciones matemáticas
-
+using namespace std;
 // Implementación de las funciones declaradas en funciones.h
 
 // Funciones de operaciones y aplicación de fórmulas
