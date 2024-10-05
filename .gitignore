@@ -1,0 +1,9 @@
+#Ignorar ejecutables
+*.exe
+#ignorar  objeto
+*.o
+#ignorar diseño
+*.layout
+#ignorar arch windows
+*.win
+
