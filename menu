@@ -1,0 +1,55 @@
+#include <iostream>
+#include <cmath>
+#include "funciones.h"
+
+
+ // Para cálculos matemáticos
+using namespace std;
+
+// Menú principal
+int menu() {
+	
+    int opcion;
+    char continuar = 's';
+
+    cout << "--- Bienvenido al Programa de Movimiento Circular ---\n";
+    while (continuar == 's' || continuar == 'S') {
+        cout << "\n¿Qué te gustaría hacer?\n";
+        cout << "1. Ver Teoría\n";
+        cout << "2. Realizar Operaciones\n";
+        cout << "3. Resolver Ejercicios Propuestos\n";
+        cout << "4. Guía de Resolución de Problemas Tipo\n";
+        cout << "5. Salir\n";
+        cout << "Elige una opción: ";
+        cin >> opcion;
+
+        switch (opcion) {
+            case 1:
+                mostrarTeoria();
+                break;
+            case 2:
+                realizarOperaciones();
+                break;
+            case 3:
+                ejerciciosPropuestos();
+                break;
+            case 4:
+                guiaResolucionProblemas();
+                break;
+            case 5:
+                cout << "Saliendo del programa...\n";
+                continuar = 'n';
+                break;
+            default:
+                cout << "Opción no válida.\n";
+        }
+
+        if (continuar != 'n') {
+            cout << "\n¿Quieres continuar? (s/n): ";
+            cin >> continuar;
+        }
+    }
+
+    return 0;
+}
+
