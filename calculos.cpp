@@ -16,3 +16,7 @@ float calcularAceleracionCentripeta(float velocidadTangencial, float radio) {
     return (velocidadTangencial * velocidadTangencial) / radio;
 }
 
+float calcularFrecuencia(float n, float t){
+	return n / t;
+}
+

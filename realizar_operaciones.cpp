@@ -12,6 +12,7 @@ void realizarOperaciones() {
     cout << "1. Velocidad Angular\n";
     cout << "2. Velocidad Tangencial\n";
     cout << "3. Aceleración Centrípta\n";
+    cout << "4. Frecuencia\n";
     cout << "Elige una opción: ";
     cin >> opcion;
 
@@ -51,6 +52,18 @@ void realizarOperaciones() {
             
             break;
         }
+        case 4: {
+        	cout<<"_________________________________________\n";
+            float revoluciones, tiempo;
+            cout << "Ingresa el numero de revoluciones (unidades): ";
+            cin >> revoluciones;
+            cout << "Ingresa el tiempo (segundos): ";
+            cin >> tiempo;
+            frecu();
+            OPfrecuencia(revoluciones, tiempo);
+            
+			break;
+		}
         default:
             cout << "Opción no válida.\n";
     }

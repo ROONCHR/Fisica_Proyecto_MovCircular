@@ -35,6 +35,17 @@ void OPacelcent(float vt,float r){
     float aceleracionCentripeta = calcularAceleracionCentripeta(vt, r);
     cout << "       a_c = " << aceleracionCentripeta << " m/s².\n\n";
 }
+void OPfrecuencia(float n, float s){
+	cout<< "\nRemplazamos los datos:\n\n";
+	cout << "              revoluciones             \n";
+    cout << "         F = --------------    \n";
+    cout << "               segundos              \n";
+    cout << "                  ("<<n<<")             \n";
+    cout << "       F = -------------------    \n";
+    cout << "                  ("<<s<<")              \n";
+    float frecuencia = calcularFrecuencia(n, s);
+    cout << "       F = " << frecuencia << " Hz.\n\n";
+}
 
 
 
