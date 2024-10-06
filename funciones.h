@@ -16,6 +16,8 @@ float calcularVelocidadAngular(float frecuencia);
 float calcularVelocidadTangencial(float radio, float velocidadAngular);
 
 float calcularAceleracionCentripeta(float velocidadTangencial, float radio) ;
+
+float calcularFrecuencia(float n, float t);
 int menu();
 
 
@@ -33,4 +35,5 @@ void veltang();
 void OPfrecuyvelangu(float f);
 void OPveltang(float r,float f);
 void OPacelcent(float vt,float r);
+void OPfrecuencia(float n, float t);
 #endif // FUNCIONES_H
