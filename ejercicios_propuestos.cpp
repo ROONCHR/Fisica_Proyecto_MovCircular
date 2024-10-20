@@ -9,104 +9,322 @@ using namespace std;
 //Funciones de los ejercicios
 void ejercicio1() {
     system("cls");
-    cout << "\t\t\tEjercicio 1\n";
-    cout << "\t\t=============\n";
-    cout << "1. Un objeto gira con una frecuencia de 5 Hz en una trayectoria circular de 2 metros de radio.\n";
-    cout << "   Â¿Cual es su velocidad angular?\n";
-    cout << "   a) 31.41 rad/s\n";
-    cout << "   b) 12.56 rad/s\n";
-    cout << "   c) 62.83 rad/s\n";
-    cout << "Elige la respuesta correcta: ";
+    cout << "\t\t\tCalcular Velocidad Angular (Frecuencia)\n";
+    cout << "\t\t=========================================\n";
+    cout << "Un objeto gira a una frecuencia de 3 Hz.\n";
+    cout << "¿Cuál es su velocidad angular en rad/s?\n";
+    cout << " RESOLVAMOS:\n¿Necesitas ayuda?(s/n): "; 
+    char resp;
+    cin >> resp;
+
+    if (resp == 's' || resp == 'S') {
+        realizarOperaciones();
+    } else {
+        cout << "--------------------------------------\n";
+        cout << "Entonces, pasamos a responder:\n";
+    }
+    cout << "Opciones:\n";
+    cout << "a) 6 rad/s\n";
+    cout << "b) 9.42 rad/s\n";
+    cout << "c) 18.84 rad/s\n";
+    cout << "d) 12.56 rad/s\n";
+    
     char respuesta;
     cin >> respuesta;
 
-    if (respuesta == 'b' || respuesta == 'B') {
-        cout << "Correcto! La velocidad angular es 31.41 rad/s.\n";
-    } else if (respuesta == 'a' || respuesta == 'A' || respuesta == 'c' || respuesta == 'C') {
-        cout << "Incorrecto. La respuesta correcta es 31.41 rad/s.\n";
-    }else {
-        cout << "Opcion invalida\n";
+
+    if (respuesta == 'c' || respuesta == 'C') {
+        cout << "¡Correcto! La velocidad angular es 18.84 rad/s.\n";
+    } else {
+        cout << "Incorrecto. La respuesta correcta es 18.84 rad/s.\n";
     }
     cout << "--------------------------------------\n";
-    cin.ignore();
-    cin.get();
+    system("pause");
 }
 
 void ejercicio2() {
-    char respuesta;
     system("cls");
-    cout << "\t\t\tEjercicio 2\n";
-    cout << "\t\t=============\n";
-    cout << "Un objeto gira con una velocidad angular de 8.96 rad/s.\n";
-    cout << "Â¿Cual es el periodo de rotacion del objeto?\n";
-    cout << "a) 0.7 segundos\n";
-    cout << "b) 1.25 segundos\n";
-    cout << "c) 0.88 segundos\n";
-    cout << "Elige la respuesta correcta: ";
-    cin >> respuesta;
+    cout << "\t\t\tCalcular Velocidad Tangencial\n";
+    cout << "\t\t===============================\n";
+    cout << "Un objeto gira con una velocidad angular de 4 rad/s y un radio de 5 metros.\n";
+    cout << "¿Cuál es su velocidad tangencial?\n";
+    cout << " RESOLVAMOS:\n¿Necesitas ayuda?(s/n): "; 
+    char resp;
+    cin >> resp;
 
-    if (respuesta == 'c' || respuesta == 'C') {
-        cout << "Â¡Correcto! El periodo de rotaciÃ³n es aproximadamente 0.88 segundos.\n";
-    } else if (respuesta == 'a' || respuesta == 'A' || respuesta == 'b' || respuesta == 'B') {
-        cout << "Incorrecto. La respuesta correcta es 0.88 segundos.\n";
-    }else {
-        cout << "Opcion invalida\n";
+    if (resp == 's' || resp == 'S') {
+        realizarOperaciones();
+    } else {
+        cout << "--------------------------------------\n";
+        cout << "Entonces, pasamos a responder:\n";
     }
-    cout << "--------------------------------------\n";
-    cin.ignore();
-    cin.get();
-}
-
-
-void ejercicio3() {
+    cout << "Opciones:\n";
+    cout << "a) 15 m/s\n";
+    cout << "b) 20 m/s\n";
+    cout << "c) 25 m/s\n";
+    cout << "d) 10 m/s\n";
+    
     char respuesta;
-    system("cls");
-    cout << "\t\t\tEjercicio 3\n";
-    cout << "\t\t=============\n";
-    cout << "Un ciclista se mueve a lo largo de una pista circular con un radio de 22 metros, y completa una vuelta cada 3.6 segundos.\n";
-    cout << "Â¿Cual es su velocidad lineal?\n";
-    cout << "a) 40.25 m/s\n";
-    cout << "b) 38.40 m/s\n";
-    cout << "c) 36.50 m/s\n";
-    cout << "Elige la respuesta correcta: ";
     cin >> respuesta;
+
+    
 
     if (respuesta == 'b' || respuesta == 'B') {
-        cout << "Â¡Correcto! La velocidad lineal es 38.40 m/s.\n";
-    } else if (respuesta == 'a' || respuesta == 'A' || respuesta == 'c' || respuesta == 'C') {
-        cout << "Incorrecto. La respuesta correcta es 38.40 m/s.\n";
-    }else {
-        cout << "Opcion invalida\n";
+        cout << "¡Correcto! La velocidad tangencial es 20 m/s.\n";
+    } else {
+        cout << "Incorrecto. La respuesta correcta es 20 m/s.\n";
     }
     cout << "--------------------------------------\n";
-    cin.ignore();
-    cin.get();
+    system("pause");
+}
+
+void ejercicio3() {
+    system("cls");
+    cout << "\t\t\tCalcular Aceleración Centrípta\n";
+    cout << "\t\t===============================\n";
+    cout << "Un objeto se mueve a 20 m/s y tiene un radio de 10 metros.\n";
+    cout << "¿Cuál es su aceleración centrípeta?\n";
+    cout << " RESOLVAMOS:\n¿Necesitas ayuda?(s/n): "; 
+    char resp;
+    cin >> resp;
+
+    if (resp == 's' || resp == 'S') {
+        realizarOperaciones();
+    } else {
+        cout << "--------------------------------------\n";
+        cout << "Entonces, pasamos a responder:\n";
+    }
+    cout << "Opciones:\n";
+    cout << "a) 20 m/s²\n";
+    cout << "b) 10 m/s²\n";
+    cout << "c) 40 m/s²\n";
+    cout << "d) 5 m/s²\n";
+    
+    char respuesta;
+    cin >> respuesta;
+
+    
+
+    if (respuesta == 'c' || respuesta == 'C') {
+        cout << "¡Correcto! La aceleración centrípeta es 40 m/s².\n";
+    } else {
+        cout << "Incorrecto. La respuesta correcta es 40 m/s².\n";
+    }
+    cout << "--------------------------------------\n";
+    system("pause");
 }
 
 void ejercicio4() {
-    char respuesta;
     system("cls");
-    cout << "\t\t\tEjercicio 4\n";
-    cout << "\t\t=============\n";
-    cout << "Un automovil esta recorriendo una pista circular que tiene un radio de 47 metros, a una velocidad constante de 25 m/s.\n";
-    cout << "Â¿Cual es la aceleracion centripeta del automovil?\n";
-    cout << "a) 13.30 m/s^2\n";
-    cout << "b) 10.64 m/s^2\n";
-    cout << "c) 14.12 m/s^2\n";
-    cout << "Elige la respuesta correcta: ";
+    cout << "\t\t\tCalcular Frecuencia\n";
+    cout << "\t\t====================\n";
+    cout << "Un objeto completa 12 revoluciones en 10 segundos.\n";
+    cout << "¿Cuál es su frecuencia?\n";
+    cout << " RESOLVAMOS:\n¿Necesitas ayuda?(s/n): "; 
+    char resp;
+    cin >> resp;
+
+    if (resp == 's' || resp == 'S') {
+        realizarOperaciones();
+    } else {
+        cout << "--------------------------------------\n";
+        cout << "Entonces, pasamos a responder:\n";
+    }
+    cout << "Opciones:\n";
+    cout << "a) 1.2 Hz\n";
+    cout << "b) 2 Hz\n";
+    cout << "c) 0.8 Hz\n";
+    cout << "d) 3 Hz\n";
+    
+    char respuesta;
     cin >> respuesta;
 
-    if (respuesta == 'b' || respuesta == 'B') {
-        cout << "Â¡Correcto! La aceleracion centripeta es 10.64 m/s^2.\n";
-    } else if (respuesta == 'a' || respuesta == 'A' || respuesta == 'c' || respuesta == 'C') {
-        cout << "Incorrecto. La respuesta correcta es 10.64 m/s^2.\n";
+    
+
+    if (respuesta == 'a' || respuesta == 'A') {
+        cout << "¡Correcto! La frecuencia es 1.2 Hz.\n";
     } else {
-        cout << "Opcion invalida\n";
+        cout << "Incorrecto. La respuesta correcta es 1.2 Hz.\n";
     }
     cout << "--------------------------------------\n";
-    cin.ignore();
-    cin.get();
+    system("pause");
 }
+
+void ejercicio5() {
+    system("cls");
+    cout << "\t\t\tCalcular Velocidad Angular\n";
+    cout << "\t\t===========================\n";
+    cout << "Un objeto gira 90 grados en 2 segundos.\n";
+    cout << "¿Cuál es su velocidad angular en rad/s?\n";
+    cout << " RESOLVAMOS:\n¿Necesitas ayuda?(s/n): "; 
+    char resp;
+    cin >> resp;
+
+    if (resp == 's' || resp == 'S') {
+        realizarOperaciones();
+    } else {
+        cout << "--------------------------------------\n";
+        cout << "Entonces, pasamos a responder:\n";
+    }
+    cout << "Opciones:\n";
+    cout << "a) 1 rad/s\n";
+    cout << "b) 2 rad/s\n";
+    cout << "c) 4.5 rad/s\n";
+    cout << "d) 3 rad/s\n";
+    
+    char respuesta;
+    cin >> respuesta;
+
+    
+
+    if (respuesta == 'd' || respuesta == 'D') {
+        cout << "¡Correcto! La velocidad angular es 3 rad/s.\n";
+    } else {
+        cout << "Incorrecto. La respuesta correcta es 3 rad/s.\n";
+    }
+    cout << "--------------------------------------\n";
+    system("pause");
+}
+void ejercicio6() {
+    system("cls");
+    cout << "\t\t\tCalcular Periodo desde Frecuencia\n";
+    cout << "\t\t==================================\n";
+    cout << "Un objeto tiene una frecuencia de 4 Hz.\n";
+    cout << "¿Cuál es su periodo?\n";
+    char resp;
+    cin >> resp;
+
+    if (resp == 's' || resp == 'S') {
+        realizarOperaciones();
+    } else {
+        cout << "--------------------------------------\n";
+        cout << "Entonces, pasamos a responder:\n";
+    }
+    cout << "Opciones:\n";
+    cout << "a) 0.25 s\n";
+    cout << "b) 0.5 s\n";
+    cout << "c) 1 s\n";
+    cout << "d) 2 s\n";
+    
+    char respuesta;
+    cin >> respuesta;
+
+    
+
+    if (respuesta == 'a' || respuesta == 'A') {
+        cout << "¡Correcto! El periodo es 0.25 s.\n";
+    } else {
+        cout << "Incorrecto. La respuesta correcta es 0.25 s.\n";
+    }
+    cout << "--------------------------------------\n";
+    system("pause");
+}
+
+void ejercicio7() {
+    system("cls");
+    cout << "\t\t\tCalcular Aceleración Centrípta desde Velocidad Angular\n";
+    cout << "\t\t======================================================\n";
+    cout << "Un objeto tiene una velocidad angular de 5 rad/s y un radio de 8 metros.\n";
+    cout << "¿Cuál es su aceleración centrípeta?\n";
+    char resp;
+    cin >> resp;
+
+    if (resp == 's' || resp == 'S') {
+        realizarOperaciones();
+    } else {
+        cout << "--------------------------------------\n";
+        cout << "Entonces, pasamos a responder:\n";
+    }
+    cout << "Opciones:\n";
+    cout << "a) 25 m/s²\n";
+    cout << "b) 32 m/s²\n";
+    cout << "c) 20 m/s²\n";
+    cout << "d) 10 m/s²\n";
+    
+    char respuesta;
+    cin >> respuesta;
+
+    
+
+    if (respuesta == 'a' || respuesta == 'A') {
+        cout << "¡Correcto! La aceleración centrípeta es 25 m/s².\n";
+    } else {
+        cout << "Incorrecto. La respuesta correcta es 25 m/s².\n";
+    }
+    cout << "--------------------------------------\n";
+    system("pause");
+}
+
+void ejercicio8() {
+    system("cls");
+    cout << "\t\t\tCalcular Aceleración Tangencial\n";
+    cout << "\t\t===============================\n";
+    cout << "Un objeto aumenta su velocidad de 10 m/s a 30 m/s en 4 segundos.\n";
+    cout << "¿Cuál es su aceleración tangencial?\n";
+    char resp;
+    cin >> resp;
+
+    if (resp == 's' || resp == 'S') {
+        realizarOperaciones();
+    } else {
+        cout << "--------------------------------------\n";
+        cout << "Entonces, pasamos a responder:\n";
+    }
+    cout << "Opciones:\n";
+    cout << "a) 5 m/s²\n";
+    cout << "b) 10 m/s²\n";
+    cout << "c) 7.5 m/s²\n";
+    cout << "d) 2.5 m/s²\n";
+    
+    char respuesta;
+    cin >> respuesta;
+
+
+    if (respuesta == 'a' || respuesta == 'A') {
+        cout << "¡Correcto! La aceleración tangencial es 5 m/s².\n";
+    } else {
+        cout << "Incorrecto. La respuesta correcta es 5 m/s².\n";
+    }
+    cout << "--------------------------------------\n";
+    system("pause");
+}
+
+void ejercicio9() {
+    system("cls");
+    cout << "\t\t\tCalcular Aceleración Total\n";
+    cout << "\t\t===========================\n";
+    cout << "Un objeto tiene una aceleración centrípeta de 10 m/s² y una aceleración tangencial de 5 m/s².\n";
+    cout << "¿Cuál es su aceleración total?\n";
+    char resp;
+    cin >> resp;
+
+    if (resp == 's' || resp == 'S') {
+        realizarOperaciones();
+    } else {
+        cout << "--------------------------------------\n";
+        cout << "Entonces, pasamos a responder:\n";
+    }
+    cout << "Opciones:\n";
+    cout << "a) 10.5 m/s²\n";
+    cout << "b) 12.25 m/s²\n";
+    cout << "c) 15 m/s²\n";
+    cout << "d) 5.5 m/s²\n";
+    
+    char respuesta;
+    cin >> respuesta;
+
+    
+
+    if (respuesta == 'b' || respuesta == 'B') {
+        cout << "¡Correcto! La aceleración total es 12.25 m/s².\n";
+    } else {
+        cout << "Incorrecto. La respuesta correcta es 12.25 m/s².\n";
+    }
+    cout << "--------------------------------------\n";
+    system("pause");
+}
+
+
 
 //Funcion del ejercicio propuesto
 void ejerciciosPropuestos() {
@@ -116,13 +334,18 @@ void ejerciciosPropuestos() {
         system("cls");
         cout << "\t\tEjercicios Propuestos\n";
         cout << "\t\t=====================\n";
-        cout << "1. Calcular la velocidad angular\n";
-        cout << "2. Calcular el periodo\n";
-        cout << "3. Calcular la velocidad lineal\n";
-        cout << "4. Calcular la aceleracion centripeta\n";
-        cout << "5. Salir\n\n";
-        cout << "Seleccione una opcion: ";
-        cin >> opcion;
+	    cout << "1. Calcular Velocidad Angular\n";
+	    cout << "2. Calcular Velocidad Tangencial \n";
+	    cout << "3. Calcular Aceleración Centrípta \n";
+	    cout << "4. Calcular Frecuencia \n";
+	    cout << "5. Calcular Velocidad Angular \n";
+	    cout << "6. Calcular Periodo desde frecuencia\n";
+	    cout << "7. Calcular Aceleración Centrípta desde velocidad angular\n";
+	    cout << "8. Calcular Aceleración Tangencial \n";
+	    cout << "9. Calcular Aceleración Total \n";
+	    cout << "Elige una opción: ";
+	    cin >> opcion;
+        
 
         switch (opcion) {
             case 1:
@@ -138,13 +361,28 @@ void ejerciciosPropuestos() {
                 ejercicio4();
                 break;
             case 5:
+                ejercicio5(); 
                 break;
+            case 6:
+                ejercicio6();  
+                break;
+            case 7:
+                ejercicio7(); 
+                break;
+            case 8:
+                ejercicio8();
+                break;
+            case 9:
+            	ejercicio9();
+                break;
+            case 10:
+            	break;
             default:
                 cout << "Opcion invalida. Por favor, intente de nuevo.\n";
                 cin.ignore();
                 cin.get(); 
                 break;
             }
-    } while (opcion != 5);
+    } while (opcion !=10 );
     system("cls");
 }
