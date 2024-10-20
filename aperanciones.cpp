@@ -47,5 +47,61 @@ void OPfrecuencia(float n, float s){
     cout << "       F = " << frecuencia << " Hz.\n\n";
 }
 
+// Formato para Velocidad Angular desde ángulo y tiempo
+void OPvelangular(double angulo, double tiempo) {
+    cout << "\nRemplazamos los datos:\n\n";
+    cout << "              ?            \n";
+    cout << "      w =  ---------    \n";
+    cout << "              t            \n";
+    cout << "             (" << angulo << ")             \n";
+    cout << "      w =  -------------------    \n";
+    cout << "              (" << tiempo << ")            \n";
+    double velocidadAngular = calcularVelocidadAngular(angulo, tiempo);
+    cout << "      w = " << velocidadAngular << " rad/s.\n\n";
+}
 
+// Formato para Periodo desde frecuencia
+void OPperiodo(double frecuencia) {
+    cout << "\nRemplazamos los datos:\n\n";
+    cout << "              1            \n";
+    cout << "      T =  ---------    \n";
+    cout << "              f            \n";
+    cout << "             (1)           \n";
+    cout << "      T =  -------------------    \n";
+    cout << "             (" << frecuencia << ")           \n";
+    double periodo = calcularPeriodo(frecuencia);
+    cout << "      T = " << periodo << " s.\n\n";
+}
+
+// Formato para Aceleración Centrípta desde velocidad angular y radio
+void OPacelcent_angular(double velocidadAngular, double radio) {
+    cout << "\nRemplazamos los datos:\n\n";
+    cout << "              w^2 * r            \n";
+    cout << "      a_c =  -------------------    \n";
+    cout << "               (" << velocidadAngular << "^2) * " << radio << "           \n";
+    double aceleracionCentripeta = calcularAceleracionCentripetaDesdeVelocidadAngular(velocidadAngular, radio);
+    cout << "      a_c = " << aceleracionCentripeta << " m/s^2.\n\n";
+}
+
+// Formato para Aceleración Tangencial
+void OPacelTangencial(double variacionVelocidad, double variacionTiempo) {
+    cout << "\nRemplazamos los datos:\n\n";
+    cout << "              ?v            \n";
+    cout << "      a_t =  ---------    \n";
+    cout << "              ?t            \n";
+    cout << "             (" << variacionVelocidad << ")           \n";
+    cout << "      a_t =  -------------------    \n";
+    cout << "             (" << variacionTiempo << ")           \n";
+    double aceleracionTangencial = calcularAceleracionTangencial(variacionVelocidad, variacionTiempo);
+    cout << "      a_t = " << aceleracionTangencial << " m/s^2.\n\n";
+}
+
+// Formato para Aceleración Total
+void OPacelTotal(double aceleracionCentripeta, double aceleracionTangencial) {
+    cout << "\nRemplazamos los datos:\n\n";
+    cout << "      a_total = v(a_c^2 + a_t^2)\n";
+    cout << "      a_total = v(" << aceleracionCentripeta << "^2 + " << aceleracionTangencial << "^2)\n";
+    double aceleracionTotal = calcularAceleracionTotal(aceleracionCentripeta, aceleracionTangencial);
+    cout << "      a_total = " << aceleracionTotal << " m/s^2.\n\n";
+}
 
