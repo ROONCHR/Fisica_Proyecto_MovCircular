@@ -191,6 +191,7 @@ void ejercicio6() {
     cout << "\t\t==================================\n";
     cout << "Un objeto tiene una frecuencia de 4 Hz.\n";
     cout << "¿Cuál es su periodo?\n";
+    cout << " RESOLVAMOS:\n¿Necesitas ayuda?(s/n): "; 
     char resp;
     cin >> resp;
 
@@ -226,6 +227,7 @@ void ejercicio7() {
     cout << "\t\t======================================================\n";
     cout << "Un objeto tiene una velocidad angular de 5 rad/s y un radio de 8 metros.\n";
     cout << "¿Cuál es su aceleración centrípeta?\n";
+    cout << " RESOLVAMOS:\n¿Necesitas ayuda?(s/n): "; 
     char resp;
     cin >> resp;
 
@@ -261,6 +263,7 @@ void ejercicio8() {
     cout << "\t\t===============================\n";
     cout << "Un objeto aumenta su velocidad de 10 m/s a 30 m/s en 4 segundos.\n";
     cout << "¿Cuál es su aceleración tangencial?\n";
+    cout << " RESOLVAMOS:\n¿Necesitas ayuda?(s/n): "; 
     char resp;
     cin >> resp;
 
@@ -295,6 +298,7 @@ void ejercicio9() {
     cout << "\t\t===========================\n";
     cout << "Un objeto tiene una aceleración centrípeta de 10 m/s² y una aceleración tangencial de 5 m/s².\n";
     cout << "¿Cuál es su aceleración total?\n";
+    cout << " RESOLVAMOS:\n¿Necesitas ayuda?(s/n): "; 
     char resp;
     cin >> resp;
 
