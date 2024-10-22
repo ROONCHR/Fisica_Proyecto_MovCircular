@@ -3,122 +3,142 @@
 #include "funciones.h"
 
 using namespace std;
+#include <iostream>
+#include <iomanip>  // Para setw()
+using namespace std;
+
+//const int ANCHO_CONSOLA = 150;  // Ancho de la consola, ajusta según sea necesario
+//const double PI = 3.14159265358979323846;  // Valor de pi
+
+void centrarTexto(string texto) {
+    int espacios = (ANCHO_CONSOLA - texto.length()) / 2;
+    cout << setw(espacios + texto.length()) << texto << endl;
+}
+
 // Funciones de teoría
-void veloangu(){
-	cout << "1. Velocidad Angular (w)\n";
-	cout << "   ___________________\n";
-    cout << "  |  	   ?angulo    |\n";
-    cout << "  |   w =---------    |\n";
-    cout << "  |         ?t        |\n";
-    cout << "  |___________________|\n";
-    cout << "   Donde:\n";
-    cout << "   - w: velocidad angular (rad/s)\n";
-    cout << "   - ?angulo: cambio en el ángulo (rad)\n";
-    cout << "   - ?tiempo: cambio en el tiempo (s)\n\n";
+void veloangu() {
+    centrarTexto("1. Velocidad Angular (w)");
+    centrarTexto("   ___________________");
+    centrarTexto("  |  	   ?angulo    |");
+    centrarTexto("  |   w =---------    |");
+    centrarTexto("  |         ?t        |");
+    centrarTexto("  |___________________|");
+    centrarTexto("   Donde:");
+    centrarTexto("   - w: velocidad angular (rad/s)");
+    centrarTexto("   - ?angulo: cambio en el ángulo (rad)");
+    centrarTexto("   - ?tiempo: cambio en el tiempo (s)\n");
 }
-void frecu(){
-	cout << "2. Frecuencia (f)\n";
-	cout << "   ______________\n";
-    cout << "  |       N      |\n";
-    cout << "  |  f =------   |\n";
-    cout << "  |       t      |\n";
-    cout << "  |______________|\n";
-    cout << "   Donde:\n";
-    cout << "   - f: frecuencia (Hz)\n";
-    cout << "   - N: número de revoluciones\n";
-    cout << "   - t: tiempo (s)\n\n";
+
+void frecu() {
+    centrarTexto("2. Frecuencia (f)");
+    centrarTexto("   ______________");
+    centrarTexto("  |       N      |");
+    centrarTexto("  |  f =------   |");
+    centrarTexto("  |       t      |");
+    centrarTexto("  |______________|");
+    centrarTexto("   Donde:");
+    centrarTexto("   - f: frecuencia (Hz)");
+    centrarTexto("   - N: número de revoluciones");
+    centrarTexto("   - t: tiempo (s)\n");
 }
-void frecuyvelangu(){
-	cout << "3. Relación entre Frecuencia y Velocidad Angular\n";
-	cout << "   _______________\n";
-    cout << "  |    w = 2pf    |\n";
-    cout << "  |_______________|\n\n";
-    cout << "   Donde:\n";
-    cout << "   - w: velocidad angular (rad/s)\n";
-    cout << "   - f: frecuencia (Hz)\n";
-    cout << "   - p: es la constante (pi="<<PI<<")\n";
+
+void frecuyvelangu() {
+    centrarTexto("3. Relación entre Frecuencia y Velocidad Angular");
+    centrarTexto("   _______________");
+    centrarTexto("  |    w = 2pf    |");
+    centrarTexto("  |_______________|");
+    centrarTexto("   Donde:");
+    centrarTexto("   - w: velocidad angular (rad/s)");
+    centrarTexto("   - f: frecuencia (Hz)");
+    centrarTexto("   - p: es la constante (pi=3.14\n");
 }
-void peri(){
-	cout << "4. Periodo (T)\n";
-	cout << "    ______________________\n";
-    cout << "   |      1     2p        |\n";
-    cout << "   |  T= --- = ----       |\n";
-    cout << "   |      f     w         |\n";
-    cout << "   |______________________|\n\n";
-    cout << "   Donde:\n";
-    cout << "   - T: periodo (rad/s)\n";
-    cout << "   - w: velocidad angular (rad/s)\n";
-    cout << "   - f: frecuencia (Hz)\n";
-    cout << "   - p: es la constante (pi="<<PI<<")\n";
+
+void peri() {
+    centrarTexto("4. Periodo (T)");
+    centrarTexto("    ______________________");
+    centrarTexto("   |      1     2p        |");
+    centrarTexto("   |  T= --- = ----       |");
+    centrarTexto("   |      f     w         |");
+    centrarTexto("   |______________________|");
+    centrarTexto("   Donde:");
+    centrarTexto("   - T: periodo (rad/s)");
+    centrarTexto("   - w: velocidad angular (rad/s)");
+    centrarTexto("   - f: frecuencia (Hz)");
+    centrarTexto("   - p: es la constante (pi=3.14\n");
 }
-void vellin(){
-	cout << "5. Velocidad Lineal (v)\n";
-	cout << "     ________________\n";
-    cout << "    |   v = w * r    |\n ";
-    cout << "   |________________|\n";
-    cout << "   Donde:\n";
-    cout << "   - v: velocidad lineal (m/s)\n";
-    cout << "   - w: velocidad angular (rad/s)\n";
-	cout << "   - r: radio de la trayectoria (m)\n\n";
+
+void vellin() {
+    centrarTexto("5. Velocidad Lineal (v)");
+    centrarTexto("     ________________");
+    centrarTexto("    |   v = w * r    |");
+    centrarTexto("   |________________|");
+    centrarTexto("   Donde:");
+    centrarTexto("   - v: velocidad lineal (m/s)");
+    centrarTexto("   - w: velocidad angular (rad/s)");
+    centrarTexto("   - r: radio de la trayectoria (m)\n");
 }
-void acelcent(){
-	cout << "6. Aceleración Centripeta (a_c)\n";
-	cout << "    _____________________________\n";
-    cout << "   |           v^2               |\n";
-    cout << "   |    a_c = ----- = w^2 * r    |\n";
-    cout << "   |             r               |\n";
-    cout << "   |_____________________________|\n\n";
-    cout << "   Donde:\n";
-    cout << "   - v: velocidad lineal (m/s)\n";
-    cout << "   - w: velocidad angular (rad/s)\n";
-	cout << "   - r: radio de la trayectoria (m)\n\n";
-    
+
+void acelcent() {
+    centrarTexto("6. Aceleración Centripeta (a_c)");
+    centrarTexto("    _____________________________");
+    centrarTexto("   |           v^2               |");
+    centrarTexto("   |    a_c = ----- = w^2 * r    |");
+    centrarTexto("   |             r               |");
+    centrarTexto("   |_____________________________|");
+    centrarTexto("   Donde:");
+    centrarTexto("   - v: velocidad lineal (m/s)");
+    centrarTexto("   - w: velocidad angular (rad/s)");
+    centrarTexto("   - r: radio de la trayectoria (m)\n");
 }
-void aceltan(){
-	cout << "7. Aceleración Tangencial (a_t)\n";
-	cout << "    _______________________\n";
-    cout << "   |             ?v        |\n";
-    cout << "   |      a_t = ----       |\n";
-    cout << "   |             ?t        |\n";
-	cout << "   |_______________________|\n\n";
-    cout << " Donde:\n";
-    cout << " - ?v : variacion de tiempo\n";
-    cout << " - ?t : variacion de tiempo\n\n";
+
+void aceltan() {
+    centrarTexto("7. Aceleración Tangencial (a_t)");
+    centrarTexto("    _______________________");
+    centrarTexto("   |             ?v        |");
+    centrarTexto("   |      a_t = ----       |");
+    centrarTexto("   |             ?t        |");
+    centrarTexto("   |_______________________|");
+    centrarTexto("   Donde:");
+    centrarTexto("   - ?v : variación de velocidad");
+    centrarTexto("   - ?t : variación de tiempo\n");
 }
-void aceltotal(){
-	cout << "8. Aceleración Total (a)\n";
-	cout << "    __________________________\n";
-	cout << "   |        _______________   | \n";  
-    cout << "   |  a = \/ (a_c^2 + a_t^2)   |\n";
-    cout << "   |__________________________|\n\n";
-    cout << " Donde:\n";
-    cout << " - a_c : Aceleración Tangencial\n";
-    cout << " - a_t : Aceleración Centripeta\n\n";
+
+void aceltotal() {
+    centrarTexto("8. Aceleración Total (a)");
+    centrarTexto("    __________________________");
+    centrarTexto("   |        _______________   |");  
+    centrarTexto("   |  a = \\/ (a_c^2 + a_t^2)  |");
+    centrarTexto("   |__________________________|");
+    centrarTexto("   Donde:");
+    centrarTexto("   - a_c : Aceleración Centripeta");
+    centrarTexto("   - a_t : Aceleración Tangencial\n");
 }
-void veltang(){
-	cout << "9. Velocidad Tangencial (v_t)\n";
-	cout << "    __________________________________\n";
-	cout << "   |        2p * r                    | \n";  
-    cout << "   | v_t = -------- =  2p*r*f = r*w   |\n";
-    cout << "   |          T                       |\n";
-    cout << "   |__________________________________|\n\n";
-    cout << " Donde:\n";
-    cout << "   - r: radio \n";
-    cout << "   - T: periodo (rad/s)\n";
-    cout << "   - f: frecuencia(Hz)\n";
-    cout << "   - w: velocidad angular (rad/s)\n";
-    cout << "   - p: es la constante (pi="<<PI<<")\n";
+
+void veltang() {
+    centrarTexto("9. Velocidad Tangencial (v_t)");
+    centrarTexto("    __________________________________");
+    centrarTexto("   |        2p * r                    |");  
+    centrarTexto("   | v_t = -------- =  2p*r*f = r*w   |");
+    centrarTexto("   |          T                       |");
+    centrarTexto("   |__________________________________|");
+    centrarTexto("   Donde:");
+    centrarTexto("   - r: radio");
+    centrarTexto("   - T: periodo (rad/s)");
+    centrarTexto("   - f: frecuencia(Hz)");
+    centrarTexto("   - w: velocidad angular (rad/s)");
+    centrarTexto("   - p: es la constante (pi=3.14\n");
 }
 
 void mostrarTeoria() {
-    cout << "\n--- Teoría de Movimiento Circular ---\n";
-    cout << "El movimiento circular describe el movimiento de un objeto a lo largo de una trayectoria circular.\n";
-    cout << "Algunos conceptos importantes son:\n";
-    cout << "- Velocidad Angular (w): la velocidad con la que un objeto gira, medida en radianes por segundo (rad/s).\n";
-    cout << "- Velocidad Tangencial (v): la velocidad de un objeto en la dirección de su movimiento en la trayectoria.\n";
-    cout << "- Aceleración Centripeta (a): la aceleración dirigida hacia el centro de la trayectoria.\n";
-    cout << " Esos son algunos de los conceptos mas importantes, tambien tenemos alguna formulas y relaciones:\n\n";
-    
+	system("cls");
+    centrarTexto("--- Teoría de Movimiento Circular ---");
+    centrarTexto("El movimiento circular describe el movimiento de un objeto a lo largo de una trayectoria circular.");
+    centrarTexto("Algunos conceptos importantes son:");
+    centrarTexto("- Velocidad Angular (w): la velocidad con la que un objeto gira, medida en radianes por segundo (rad/s).");
+    centrarTexto("- Velocidad Tangencial (v): la velocidad de un objeto en la dirección de su movimiento en la trayectoria.");
+    centrarTexto("- Aceleración Centripeta (a): la aceleración dirigida hacia el centro de la trayectoria.");
+    centrarTexto(" Esos son algunos de los conceptos más importantes, también tenemos algunas fórmulas y relaciones:\n");
+
     system("pause");
     veloangu();
     system("pause");
@@ -126,8 +146,8 @@ void mostrarTeoria() {
     system("pause");
     frecuyvelangu();
     system("pause");
-	peri();
-	system("pause");
+    peri();
+    system("pause");
     vellin();
     system("pause");
     acelcent();
@@ -138,6 +158,8 @@ void mostrarTeoria() {
     system("pause");
     veltang();
     system("pause");
-    
-    cout << "--------------------------------------\n";
+
+    centrarTexto("--------------------------------------\n");
 }
+
+

@@ -12,57 +12,57 @@ int menu() {
     int opcion;
     char continuar = 's';
 
-    cout << "--- Bienvenido al Programa de Movimiento Circular ---\n";
+    cout << "\t\t\t\t\t\t\t--- Bienvenido al Programa de Movimiento Circular ---\n";
     while (continuar == 's' || continuar == 'S') {
-        cout << "\n¿Qué te gustaría hacer?\n";
-        cout << "1. Ver Teoría\n";
-        cout << "2. Realizar Operaciones\n";
-        cout << "3. Resolver Ejercicios Propuestos\n";
-        cout << "4. Guía de Resolución de Problemas Tipo\n";
-        cout << "5. Formulario\n";
-        cout << "6. Salir\n";
-		cout << "7. Limpiar pantalla\n";
-        cout << "Elige una opción: ";
+        cout << "\t\t\t\t\t\t\t¿Qué te gustaría hacer?\n";
+        cout << "\t\t\t\t\t\t\t1. Ver Teoría\n";
+        cout << "\t\t\t\t\t\t\t2. Realizar Operaciones\n";
+        cout << "\t\t\t\t\t\t\t3. Resolver Ejercicios Propuestos\n";
+        cout << "\t\t\t\t\t\t\t4. Guía de Resolución de Problemas Tipo\n";
+        cout << "\t\t\t\t\t\t\t5. Formulario\n";
+        cout << "\t\t\t\t\t\t\t6. Salir\n";
+		cout << "\t\t\t\t\t\t\t7. Limpiar pantalla\n";
+        cout << "\t\t\t\t\t\t\tElige una opción: ";
         cin >> opcion;
 
         switch (opcion) {
             case 1:
-            	
+            	cout << "\t\t\t\t\t\t\t___________________________________\n";
                 mostrarTeoria();
-                
+            	cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
             case 2:
-            	
+            	cout << "\t\t\t\t\t\t\t___________________________________\n";
                 realizarOperaciones();
-                
+            	cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
             case 3:
-            	
+            	cout << "\t\t\t\t\t\t\t___________________________________\n";
                 ejerciciosPropuestos();
-                
+            	cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
             case 4:
-            	 
+            	cout << "\t\t\t\t\t\t\t___________________________________\n";
                 guiaResolucionProblemas();
-                
+            	cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
             case 5:
-            	
+            	cout << "\t\t\t\t\t\t\t___________________________________\n";
                 formulario();
-                
+            	cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
         	case 6:
-                cout << "Saliendo del programa...\n";
+				cout << "\t\t\t\t\t\t\tSaliendo del programa...\n";
                 continuar = 'n';
                 break;
 			case 7:
 				system("cls");
 				break;        
             default:
-                cout << "Opción no válida.\n";
+				cout << "\t\t\t\t\t\t\tOpción no válida.\n";
         }
 
-        cout<<"___________________________________";
+		cout << "\t\t\t\t\t\t\t___________________________________\n";
     }
 
     return 0;

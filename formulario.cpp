@@ -8,80 +8,80 @@ void formulario(){
 	int opcion;
     char continuar = 's';
 
-    cout << "------ FORMULARIO -------\n";
+    cout << "\t\t\t\t\t\t\t------ FORMULARIO -------\n";
     while (continuar == 's' || continuar == 'S') {
-        cout << "\n¿Qué formula quieres ver?\n";
-        cout << "1. Velocidad angular\n";
-        cout << "2. Frecuencia\n";
-        cout << "3. Relacion entre Frecuencia y velocidad angular\n";
-        cout << "4. Periodo\n";
-        cout << "5. Velocidad lineal\n";
-        cout << "6. Aceleracion centripeta\n";
-        cout << "7. Aceleracion tangencial\n";
-        cout << "8. Aceleracion total\n";
-        cout << "9. Velocidad tangencial\n";
-        cout << "10. Salir\n";
-        cout << "Elige una opción: ";
+        cout << "\t\t\t\t\t\t\t¿Qué fórmula quieres ver?\n";
+        cout << "\t\t\t\t\t\t\t1. Velocidad angular\n";
+        cout << "\t\t\t\t\t\t\t2. Frecuencia\n";
+        cout << "\t\t\t\t\t\t\t3. Relación entre Frecuencia y Velocidad Angular\n";
+        cout << "\t\t\t\t\t\t\t4. Periodo\n";
+        cout << "\t\t\t\t\t\t\t5. Velocidad Lineal\n";
+        cout << "\t\t\t\t\t\t\t6. Aceleración Centrípta\n";
+        cout << "\t\t\t\t\t\t\t7. Aceleración Tangencial\n";
+        cout << "\t\t\t\t\t\t\t8. Aceleración Total\n";
+        cout << "\t\t\t\t\t\t\t9. Velocidad Tangencial\n";
+        cout << "\t\t\t\t\t\t\t10. Salir\n";
+        cout << "\t\t\t\t\t\t\tElige una opción: ";
         cin >> opcion;
 
         switch (opcion) {
             case 1:
-            	cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 veloangu();
-                cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
             case 2:
-            	cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 frecu();
-                cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
             case 3:
-            	cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 frecuyvelangu();
-                cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
             case 4:
-            	cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 peri();
-                cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
             case 5:
-            	cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 vellin();
-                cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
         	case 6:
-			cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
         		acelcent();
-                cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
 			case 7:
-				cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
         		aceltan();
-                cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
 			case 8:
-				cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
         		aceltotal();
-        		cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
 			case 9:
-				cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 veltang();
-                cout<<"___________________________________\n";
+				cout << "\t\t\t\t\t\t\t___________________________________\n";
                 break;
 			case 10:
-                cout << "Saliendo ...\n";
+				cout << "\t\t\t\t\t\t\tSaliendo ...\n";
                 continuar = 'n';
                 break;				        
             default:
-                cout << "Opción no válida.\n";
+				cout << "\t\t\t\t\t\t\tOpción no válida.\n";
         }
 
         if (continuar != 'n') {
-            cout << "\n¿Quieres continuar? (s/n): ";
+			cout << "\t\t\t\t\t\t\t\n¿Quieres continuar? (s/n): ";
             cin >> continuar;
         }
     }
-	
 }
+
