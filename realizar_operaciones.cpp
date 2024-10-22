@@ -2,126 +2,120 @@
 #include <cmath>
 #include "funciones.h"
 
-
 using namespace std;
 
 void realizarOperaciones() {
     int opcion;
-    cout << "\n--- Cálculos de Movimiento Circular ---\n";
-    cout << "¿Qué deseas calcular?\n";
-    cout << "1. Calcular Velocidad Angular (frecuencia)\n";
-    cout << "2. Calcular Velocidad Tangencial (radio y velocidad angular)\n";
-    cout << "3. Calcular Aceleración Centrípta (velocidad tangencial y radio)\n";
-    cout << "4. Calcular Frecuencia (número de revoluciones y tiempo)\n";
-    cout << "5. Calcular Velocidad Angular (ángulo y tiempo)\n";
-    cout << "6. Calcular Periodo desde frecuencia\n";
-    cout << "7. Calcular Aceleración Centrípta desde velocidad angular\n";
-    cout << "8. Calcular Aceleración Tangencial (variación de velocidad y tiempo)\n";
-    cout << "9. Calcular Aceleración Total (centrípeta y tangencial)\n";
-    cout << "Elige una opción: ";
+    cout << "\t\t\t\t\t\t\t--- Cálculos de Movimiento Circular ---\n";
+    cout << "\t\t\t\t\t\t\t¿Qué deseas calcular?\n";
+    cout << "\t\t\t\t\t\t\t1. Calcular Velocidad Angular (frecuencia)\n";
+    cout << "\t\t\t\t\t\t\t2. Calcular Velocidad Tangencial (radio y velocidad angular)\n";
+    cout << "\t\t\t\t\t\t\t3. Calcular Aceleración Centrípta (velocidad tangencial y radio)\n";
+    cout << "\t\t\t\t\t\t\t4. Calcular Frecuencia (número de revoluciones y tiempo)\n";
+    cout << "\t\t\t\t\t\t\t5. Calcular Velocidad Angular (ángulo y tiempo)\n";
+    cout << "\t\t\t\t\t\t\t6. Calcular Periodo desde frecuencia\n";
+    cout << "\t\t\t\t\t\t\t7. Calcular Aceleración Centrípta desde velocidad angular\n";
+    cout << "\t\t\t\t\t\t\t8. Calcular Aceleración Tangencial (variación de velocidad y tiempo)\n";
+    cout << "\t\t\t\t\t\t\t9. Calcular Aceleración Total (centrípeta y tangencial)\n";
+    cout << "\t\t\t\t\t\t\tElige una opción: ";
     cin >> opcion;
 
-    
-        
     switch(opcion) {
         case 1: {
-        	cout<<"_________________________________________\n";
+            cout << "\t\t\t\t\t\t\t_________________________________________\n";
             float frecuencia;
-            cout << "Ingresa la frecuencia (Hz): ";
+            cout << "\t\t\t\t\t\t\tIngresa la frecuencia (Hz): ";
             cin >> frecuencia;
-            cout <<"Para calcular la velocidad angular mediante la formula:\n";
+            cout << "\t\t\t\t\t\t\tPara calcular la velocidad angular mediante la formula:\n";
             frecuyvelangu();
             OPfrecuyvelangu(frecuencia);
-            
             break;
         }
         case 2: {
-        	cout<<"_________________________________________\n";
+            cout << "\t\t\t\t\t\t\t_________________________________________\n";
             float radio, frecuencia;
-            cout << "Ingresa el radio (metros): ";
+            cout << "\t\t\t\t\t\t\tIngresa el radio (metros): ";
             cin >> radio;
-            cout << "Ingresa la frecuencia (Hz): ";
+            cout << "\t\t\t\t\t\t\tIngresa la frecuencia (Hz): ";
             cin >> frecuencia;
-            cout <<"Para calcular la velocidad tangencial mediante la formula:\n";
+            cout << "\t\t\t\t\t\t\tPara calcular la velocidad tangencial mediante la formula:\n";
             veltang();
-            OPveltang(radio,frecuencia);
+            OPveltang(radio, frecuencia);
             break;
         }
         case 3: {
-        	cout<<"_________________________________________\n";
+            cout << "\t\t\t\t\t\t\t_________________________________________\n";
             float velocidadTangencial, radio;
-            cout << "Ingresa la velocidad tangencial (m/s): ";
+            cout << "\t\t\t\t\t\t\tIngresa la velocidad tangencial (m/s): ";
             cin >> velocidadTangencial;
-            cout << "Ingresa el radio (metros): ";
+            cout << "\t\t\t\t\t\t\tIngresa el radio (metros): ";
             cin >> radio;
             acelcent();
             OPacelcent(velocidadTangencial, radio);
-            
             break;
         }
         case 4: {
-        	cout<<"_________________________________________\n";
+            cout << "\t\t\t\t\t\t\t_________________________________________\n";
             float revoluciones, tiempo;
-            cout << "Ingresa el numero de revoluciones (unidades): ";
+            cout << "\t\t\t\t\t\t\tIngresa el numero de revoluciones (unidades): ";
             cin >> revoluciones;
-            cout << "Ingresa el tiempo (segundos): ";
+            cout << "\t\t\t\t\t\t\tIngresa el tiempo (segundos): ";
             cin >> tiempo;
             frecu();
             OPfrecuencia(revoluciones, tiempo);
-            
-			break;
-		}case 5: {
-			cout<<"_________________________________________\n";
+            break;
+        }
+        case 5: {
+            cout << "\t\t\t\t\t\t\t_________________________________________\n";
             double angulo, tiempo;
-            cout << "Ingresa el ángulo (rad): ";
+            cout << "\t\t\t\t\t\t\tIngresa el ángulo (rad): ";
             cin >> angulo;
-            cout << "Ingresa el tiempo (s): ";
+            cout << "\t\t\t\t\t\t\tIngresa el tiempo (s): ";
             cin >> tiempo;
             OPvelangular(angulo, tiempo);
-            
             break;
         }
         case 6: {
-        	cout<<"_________________________________________\n";
+            cout << "\t\t\t\t\t\t\t_________________________________________\n";
             double frecuencia;
-            cout << "Ingresa la frecuencia (Hz): ";
+            cout << "\t\t\t\t\t\t\tIngresa la frecuencia (Hz): ";
             cin >> frecuencia;
-            OPperiodo( frecuencia);
+            OPperiodo(frecuencia);
             break;
         }
         case 7: {
-        	cout<<"_________________________________________\n";
+            cout << "\t\t\t\t\t\t\t_________________________________________\n";
             double velocidadAngular, radio;
-            cout << "Ingresa la velocidad angular (rad/s): ";
+            cout << "\t\t\t\t\t\t\tIngresa la velocidad angular (rad/s): ";
             cin >> velocidadAngular;
-            cout << "Ingresa el radio (m): ";
+            cout << "\t\t\t\t\t\t\tIngresa el radio (m): ";
             cin >> radio;
             OPacelcent_angular(velocidadAngular, radio);
             break;
         }
         case 8: {
-        	cout<<"_________________________________________\n";
+            cout << "\t\t\t\t\t\t\t_________________________________________\n";
             double variacionVelocidad, variacionTiempo;
-            cout << "Ingresa la variación de velocidad (m/s): ";
+            cout << "\t\t\t\t\t\t\tIngresa la variación de velocidad (m/s): ";
             cin >> variacionVelocidad;
-            cout << "Ingresa la variación de tiempo (s): ";
+            cout << "\t\t\t\t\t\t\tIngresa la variación de tiempo (s): ";
             cin >> variacionTiempo;
             OPacelTangencial(variacionVelocidad, variacionTiempo);
             break;
         }
         case 9: {
-        	cout<<"_________________________________________\n";
+            cout << "\t\t\t\t\t\t\t_________________________________________\n";
             double aceleracionCentripeta, aceleracionTangencial;
-            cout << "Ingresa la aceleración centrípeta (m/s^2): ";
+            cout << "\t\t\t\t\t\t\tIngresa la aceleración centrípeta (m/s^2): ";
             cin >> aceleracionCentripeta;
-            cout << "Ingresa la aceleración tangencial (m/s^2): ";
+            cout << "\t\t\t\t\t\t\tIngresa la aceleración tangencial (m/s^2): ";
             cin >> aceleracionTangencial;
-            OPacelTotal( aceleracionCentripeta,aceleracionTangencial);
+            OPacelTotal(aceleracionCentripeta, aceleracionTangencial);
             break;
         }
 
         default:
-            cout << "Opción no válida.\n";
+            cout << "\t\t\t\t\t\t\tOpción no válida.\n";
     }
     system("pause");
 }

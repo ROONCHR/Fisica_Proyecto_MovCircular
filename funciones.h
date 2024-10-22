@@ -4,6 +4,7 @@
 using namespace std;
 // Declaración de funciones para cálculos de movimiento circular
 const float PI = 3.14159;
+const int ANCHO_CONSOLA = 150;
 // Función para calcular la velocidad angular
 void mostrarTeoria();
 void realizarOperaciones();
@@ -27,6 +28,7 @@ double calcularVelocidadTangencialDesdeVelocidadAngular(double radio, double vel
 
 
 int menu();
+void centrarTexto(string texto);
 
 
 void veloangu();
