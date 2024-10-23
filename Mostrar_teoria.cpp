@@ -7,25 +7,20 @@ using namespace std;
 #include <iomanip>  // Para setw()
 using namespace std;
 
-//const int ANCHO_CONSOLA = 150;  // Ancho de la consola, ajusta seg鷑 sea necesario
 //const double PI = 3.14159265358979323846;  // Valor de pi
 
-void centrarTexto(string texto) {
-    int espacios = (ANCHO_CONSOLA - texto.length()) / 2;
-    cout << setw(espacios + texto.length()) << texto << endl;
-}
 
-// Funciones de teor韆
+// Funciones de teor铆a
 void veloangu() {
     centrarTexto("1. Velocidad Angular (w)");
-    centrarTexto("   ___________________");
-    centrarTexto("  |  	   ?angulo    |");
+    centrarTexto("   ___________________ ");
+    centrarTexto("   |     ?angulo       |  ");
     centrarTexto("  |   w =---------    |");
     centrarTexto("  |         ?t        |");
     centrarTexto("  |___________________|");
     centrarTexto("   Donde:");
     centrarTexto("   - w: velocidad angular (rad/s)");
-    centrarTexto("   - ?angulo: cambio en el 醤gulo (rad)");
+    centrarTexto("   - ?angulo: cambio en el 谩ngulo (rad)");
     centrarTexto("   - ?tiempo: cambio en el tiempo (s)\n");
 }
 
@@ -38,13 +33,13 @@ void frecu() {
     centrarTexto("  |______________|");
     centrarTexto("   Donde:");
     centrarTexto("   - f: frecuencia (Hz)");
-    centrarTexto("   - N: n鷐ero de revoluciones");
+    centrarTexto("   - N: n煤mero de revoluciones");
     centrarTexto("   - t: tiempo (s)\n");
 }
 
 void frecuyvelangu() {
-    centrarTexto("3. Relaci髇 entre Frecuencia y Velocidad Angular");
-    centrarTexto("   _______________");
+    centrarTexto("3. Relaci贸n entre Frecuencia y Velocidad Angular");
+    centrarTexto("   _______________ ");
     centrarTexto("  |    w = 2pf    |");
     centrarTexto("  |_______________|");
     centrarTexto("   Donde:");
@@ -55,7 +50,7 @@ void frecuyvelangu() {
 
 void peri() {
     centrarTexto("4. Periodo (T)");
-    centrarTexto("    ______________________");
+    centrarTexto("    ______________________ ");
     centrarTexto("   |      1     2p        |");
     centrarTexto("   |  T= --- = ----       |");
     centrarTexto("   |      f     w         |");
@@ -71,7 +66,7 @@ void vellin() {
     centrarTexto("5. Velocidad Lineal (v)");
     centrarTexto("     ________________");
     centrarTexto("    |   v = w * r    |");
-    centrarTexto("   |________________|");
+    centrarTexto("    |________________|");
     centrarTexto("   Donde:");
     centrarTexto("   - v: velocidad lineal (m/s)");
     centrarTexto("   - w: velocidad angular (rad/s)");
@@ -79,7 +74,7 @@ void vellin() {
 }
 
 void acelcent() {
-    centrarTexto("6. Aceleraci髇 Centripeta (a_c)");
+    centrarTexto("6. Aceleraci贸n Centripeta (a_c)");
     centrarTexto("    _____________________________");
     centrarTexto("   |           v^2               |");
     centrarTexto("   |    a_c = ----- = w^2 * r    |");
@@ -92,31 +87,31 @@ void acelcent() {
 }
 
 void aceltan() {
-    centrarTexto("7. Aceleraci髇 Tangencial (a_t)");
+    centrarTexto("7. Aceleraci贸n Tangencial (a_t)");
     centrarTexto("    _______________________");
     centrarTexto("   |             ?v        |");
     centrarTexto("   |      a_t = ----       |");
     centrarTexto("   |             ?t        |");
     centrarTexto("   |_______________________|");
     centrarTexto("   Donde:");
-    centrarTexto("   - ?v : variaci髇 de velocidad");
-    centrarTexto("   - ?t : variaci髇 de tiempo\n");
+    centrarTexto("   - ?v : variaci贸n de velocidad");
+    centrarTexto("   - ?t : variaci贸n de tiempo\n");
 }
 
 void aceltotal() {
-    centrarTexto("8. Aceleraci髇 Total (a)");
+    centrarTexto("8. Aceleraci贸n Total (a)");
     centrarTexto("    __________________________");
     centrarTexto("   |        _______________   |");  
     centrarTexto("   |  a = \\/ (a_c^2 + a_t^2)  |");
     centrarTexto("   |__________________________|");
     centrarTexto("   Donde:");
-    centrarTexto("   - a_c : Aceleraci髇 Centripeta");
-    centrarTexto("   - a_t : Aceleraci髇 Tangencial\n");
+    centrarTexto("   - a_c : Aceleraci贸n Centripeta");
+    centrarTexto("   - a_t : Aceleraci贸n Tangencial\n");
 }
 
 void veltang() {
     centrarTexto("9. Velocidad Tangencial (v_t)");
-    centrarTexto("    __________________________________");
+    centrarTexto("    __________________________________ ");
     centrarTexto("   |        2p * r                    |");  
     centrarTexto("   | v_t = -------- =  2p*r*f = r*w   |");
     centrarTexto("   |          T                       |");
@@ -131,13 +126,13 @@ void veltang() {
 
 void mostrarTeoria() {
 	system("cls");
-    centrarTexto("--- Teor韆 de Movimiento Circular ---");
+    centrarTexto("--- Teor铆a de Movimiento Circular ---");
     centrarTexto("El movimiento circular describe el movimiento de un objeto a lo largo de una trayectoria circular.");
     centrarTexto("Algunos conceptos importantes son:");
-    centrarTexto("- Velocidad Angular (w): la velocidad con la que un objeto gira, medida en radianes por segundo (rad/s).");
-    centrarTexto("- Velocidad Tangencial (v): la velocidad de un objeto en la direcci髇 de su movimiento en la trayectoria.");
-    centrarTexto("- Aceleraci髇 Centripeta (a): la aceleraci髇 dirigida hacia el centro de la trayectoria.");
-    centrarTexto(" Esos son algunos de los conceptos m醩 importantes, tambi閚 tenemos algunas f髍mulas y relaciones:\n");
+    cout << "\t\t\t - Velocidad Angular (w): la velocidad con la que un objeto gira, medida en radianes por segundo (rad/s).\n";
+    cout << "\t\t\t - Velocidad Tangencial (v): la velocidad de un objeto en la direcci贸n de su movimiento en la trayectoria.\n";
+    cout << "\t\t\t - Aceleraci贸n Centripeta (a): la aceleraci贸n dirigida hacia el centro de la trayectoria.\n";
+    cout << "\t\t\t Esos son algunos de los conceptos m谩s importantes, tambi茅n tenemos algunas f贸rmulas y relaciones:\n";
 
     system("pause");
     veloangu();
@@ -161,5 +156,3 @@ void mostrarTeoria() {
 
     centrarTexto("--------------------------------------\n");
 }
-
-

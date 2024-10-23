@@ -1,17 +1,18 @@
+#include <string>
 #ifndef FUNCIONES_H
 #define FUNCIONES_H
 
 using namespace std;
-// Declaraci髇 de funciones para c醠culos de movimiento circular
+// Declaraci贸n de funciones para c谩lculos de movimiento circular
 const float PI = 3.14159;
 const int ANCHO_CONSOLA = 150;
-// Funci髇 para calcular la velocidad angular
+// Funci贸n para calcular la velocidad angular
 void mostrarTeoria();
 void realizarOperaciones();
 void ejerciciosPropuestos();
 void guiaResolucionProblemas();
 void formulario();
-// Funciones de operaciones y aplicaci髇 de f髍mulas
+// Funciones de operaciones y aplicaci贸n de f贸rmulas
 float calcularVelocidadAngular(float frecuencia);
 float calcularVelocidadTangencial(float radio, float velocidadAngular);
 float calcularAceleracionCentripeta(float velocidadTangencial, float radio) ;

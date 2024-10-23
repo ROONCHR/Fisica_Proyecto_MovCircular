@@ -1,9 +1,9 @@
 #include "funciones.h"
-#include <cmath>  // Para usar M_PI (valor de pi) y funciones matemáticas
+#include <cmath>  // Para usar M_PI (valor de pi) y funciones matemÃ¡ticas
 using namespace std;
-// Implementación de las funciones declaradas en funciones.h
+// ImplementaciÃ³n de las funciones declaradas en funciones.h
 
-// Funciones de operaciones y aplicación de fórmulas
+// Funciones de operaciones y aplicaciÃ³n de fÃ³rmulas
 float calcularVelocidadAngular(float frecuencia) {
     return 2 * PI * frecuencia;
 }
@@ -52,5 +52,3 @@ double calcularVelocidadTangencialDesdeFrecuencia(double radio, double frecuenci
 double calcularVelocidadTangencialDesdeVelocidadAngular(double radio, double velocidadAngular) {
     return radio * velocidadAngular;
 }
-
-

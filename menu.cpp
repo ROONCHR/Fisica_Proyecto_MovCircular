@@ -1,10 +1,17 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 #include "funciones.h"
 
 
  // Para cálculos matemáticos
 using namespace std;
+
+//const int ANCHO_CONSOLA = 150;  // Ancho de la consola, ajusta según sea necesario
+void centrarTexto(string texto) {
+    int espacios = (ANCHO_CONSOLA - texto.length()) / 2;
+    cout << setw(espacios + texto.length()) << texto << endl;
+}
 
 // Menú principal
 int menu() {
@@ -12,8 +19,13 @@ int menu() {
     int opcion;
     char continuar = 's';
 
-    cout << "\t\t\t\t\t\t\t--- Bienvenido al Programa de Movimiento Circular ---\n";
     while (continuar == 's' || continuar == 'S') {
+    	cout << endl;
+	    centrarTexto("****************************************************");
+	    centrarTexto("*                                                  *");
+	    centrarTexto("*                MOVIMIENTO CIRCULAR               *");
+	    centrarTexto("*                                                  *");
+	    centrarTexto("****************************************************");
         cout << "\t\t\t\t\t\t\t¿Qué te gustaría hacer?\n";
         cout << "\t\t\t\t\t\t\t1. Ver Teoría\n";
         cout << "\t\t\t\t\t\t\t2. Realizar Operaciones\n";
