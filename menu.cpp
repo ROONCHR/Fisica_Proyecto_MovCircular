@@ -7,6 +7,7 @@
  // Para cálculos matemáticos
 using namespace std;
 
+//const int ANCHO_CONSOLA = 150;  // Ancho de la consola, ajusta según sea necesario
 void centrarTexto(string texto) {
     int espacios = (ANCHO_CONSOLA - texto.length()) / 2;
     cout << setw(espacios + texto.length()) << texto << endl;
@@ -18,8 +19,6 @@ int menu() {
     int opcion;
     char continuar = 's';
 
-    
-    
     while (continuar == 's' || continuar == 'S') {
     	cout << endl;
 	    centrarTexto("****************************************************");

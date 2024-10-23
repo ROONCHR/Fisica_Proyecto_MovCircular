@@ -7,19 +7,14 @@ using namespace std;
 #include <iomanip>  // Para setw()
 using namespace std;
 
-//const int ANCHO_CONSOLA = 150;  // Ancho de la consola, ajusta según sea necesario
 //const double PI = 3.14159265358979323846;  // Valor de pi
 
-void centrarTexto(string texto) {
-    int espacios = (ANCHO_CONSOLA - texto.length()) / 2;
-    cout << setw(espacios + texto.length()) << texto << endl;
-}
 
 // Funciones de teoría
 void veloangu() {
     centrarTexto("1. Velocidad Angular (w)");
-    centrarTexto("   ___________________");
-    centrarTexto("  |  	   ?angulo    |");
+    centrarTexto("   ___________________ ");
+    centrarTexto("   |     ?angulo       |  ");
     centrarTexto("  |   w =---------    |");
     centrarTexto("  |         ?t        |");
     centrarTexto("  |___________________|");
@@ -44,7 +39,7 @@ void frecu() {
 
 void frecuyvelangu() {
     centrarTexto("3. Relación entre Frecuencia y Velocidad Angular");
-    centrarTexto("   _______________");
+    centrarTexto("   _______________ ");
     centrarTexto("  |    w = 2pf    |");
     centrarTexto("  |_______________|");
     centrarTexto("   Donde:");
@@ -55,7 +50,7 @@ void frecuyvelangu() {
 
 void peri() {
     centrarTexto("4. Periodo (T)");
-    centrarTexto("    ______________________");
+    centrarTexto("    ______________________ ");
     centrarTexto("   |      1     2p        |");
     centrarTexto("   |  T= --- = ----       |");
     centrarTexto("   |      f     w         |");
@@ -71,7 +66,7 @@ void vellin() {
     centrarTexto("5. Velocidad Lineal (v)");
     centrarTexto("     ________________");
     centrarTexto("    |   v = w * r    |");
-    centrarTexto("   |________________|");
+    centrarTexto("    |________________|");
     centrarTexto("   Donde:");
     centrarTexto("   - v: velocidad lineal (m/s)");
     centrarTexto("   - w: velocidad angular (rad/s)");
@@ -116,7 +111,7 @@ void aceltotal() {
 
 void veltang() {
     centrarTexto("9. Velocidad Tangencial (v_t)");
-    centrarTexto("    __________________________________");
+    centrarTexto("    __________________________________ ");
     centrarTexto("   |        2p * r                    |");  
     centrarTexto("   | v_t = -------- =  2p*r*f = r*w   |");
     centrarTexto("   |          T                       |");
@@ -134,10 +129,10 @@ void mostrarTeoria() {
     centrarTexto("--- Teoría de Movimiento Circular ---");
     centrarTexto("El movimiento circular describe el movimiento de un objeto a lo largo de una trayectoria circular.");
     centrarTexto("Algunos conceptos importantes son:");
-    centrarTexto("- Velocidad Angular (w): la velocidad con la que un objeto gira, medida en radianes por segundo (rad/s).");
-    centrarTexto("- Velocidad Tangencial (v): la velocidad de un objeto en la dirección de su movimiento en la trayectoria.");
-    centrarTexto("- Aceleración Centripeta (a): la aceleración dirigida hacia el centro de la trayectoria.");
-    centrarTexto(" Esos son algunos de los conceptos más importantes, también tenemos algunas fórmulas y relaciones:\n");
+    cout << "\t\t\t - Velocidad Angular (w): la velocidad con la que un objeto gira, medida en radianes por segundo (rad/s).\n";
+    cout << "\t\t\t - Velocidad Tangencial (v): la velocidad de un objeto en la dirección de su movimiento en la trayectoria.\n";
+    cout << "\t\t\t - Aceleración Centripeta (a): la aceleración dirigida hacia el centro de la trayectoria.\n";
+    cout << "\t\t\t Esos son algunos de los conceptos más importantes, también tenemos algunas fórmulas y relaciones:\n";
 
     system("pause");
     veloangu();
